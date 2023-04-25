@@ -1,0 +1,59 @@
+/* Card results */
+.card__result {
+  background-image: linear-gradient(
+    to top,
+    var(--light-royal-blue) 80%,
+    var(--light-slate-blue) 100%
+  );
+  background-size: 50% 300%;
+  text-align: center;
+  padding: 3rem 6rem;
+  color: var(--white);
+  border-radius: 0 0 25px 25px;
+}
+
+.result__label {
+  color: var(--light-lavander);
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.result__circle {
+  background-image: linear-gradient(
+    to top,
+    var(--light-royal-blue),
+    var(--violet-blue)
+  );
+  width: 12rem;
+  height: 12rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0 auto; 
+  border-radius: 50%;
+}
+
+.result__percent {
+  font-size: 1.4rem;
+  color: var(--light-lavander);
+}
+
+#result__value {
+  font-size: 5rem;
+  color: var(--white);
+  display: block;
+}
+
+.result__score {
+  font-size: 2.4rem;
+  margin: 3rem 0 1rem 0;
+}
+
+.result__description {
+  color: var(--light-lavander);
+  line-height: 1.5;
+  font-size: 1.5rem;
+}

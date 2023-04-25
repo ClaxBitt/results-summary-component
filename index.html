@@ -1,47 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Results summary component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Results summary component</title>
 
-  Your Result
-  76
-  of 100
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
 
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="card__result">
+        <p class="result__label">Your Result</p>
 
-  Reaction
-  80 / 100
+        <div class="result__circle">
+          <h1 class="result__percent">
+            <span id="result__value">76</span>
+            of 100
+          </h1>
+        </div>
 
-  Memory
-  92 / 100
+        <h3 class="result__score">Great</h3>
+        <p class="result__description">
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
+      </div>
 
-  Verbal
-  61 / 100
+      <div class="summary">
+        <h3 class="summary__title">Summary</h3>
 
-  Visual
-  72 / 100
+        <div class="summary__attributes">
+          <div class="attribute attribute--reaction">
+            <div class="attribute__label">
+              <img
+                src="./assets/images/icon-reaction.svg"
+                class="attribute__figure"
+              />
+              <p class="attribute__name">Reaction</p>
+            </div>
 
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+            <p class="attribute__score">
+              <span class="attribute__value">80</span> / 100
+            </p>
+          </div>
+
+          <div class="attribute attribute--memory">
+            <div class="attribute__label">
+              <img
+                src="./assets/images/icon-memory.svg"
+                class="attribute__figure"
+              />
+              <p class="attribute__name">Memory</p>
+            </div>
+
+            <p class="attribute__score">
+              <span class="attribute__value">92</span> / 100
+            </p>
+          </div>
+
+          <div class="attribute attribute--verbal">
+            <div class="attribute__label">
+              <img
+                src="./assets/images/icon-verbal.svg"
+                class="attribute__figure"
+              />
+              <p class="attribute__name">Verbal</p>
+            </div>
+
+            <p class="attribute__score">
+              <span class="attribute__value">61</span> / 100
+            </p>
+          </div>
+
+          <div class="attribute attribute--visual">
+            <div class="attribute__label">
+              <img
+                src="./assets/images/icon-visual.svg"
+                class="attribute__figure"
+              />
+              <p class="attribute__name">Visual</p>
+            </div>
+
+            <p class="attribute__score">
+              <span class="attribute__value">72</span> / 100
+            </p>
+          </div>
+        </div>
+
+        <button class="card__button">Continue</button>
+        
+      </div>
+
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
 </html>

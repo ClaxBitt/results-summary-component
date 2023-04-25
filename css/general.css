@@ -1,0 +1,49 @@
+/* Define font */
+@font-face {
+  font-family: "HankenGrotesk";
+  src: url("../assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
+}
+
+/* General configs */
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "HankenGrotesk", sans-serif;
+  box-sizing: inherit;
+}
+
+/* **** Card **** */
+.card {
+  min-width: 100%;
+}
+
+.card__button {
+  display: block;
+  margin: 3rem auto;
+  border: none;
+  width: 100%;
+  padding: 2rem 0;
+  background-color: var(--dark-gray-blue);
+  border-radius: 30px;
+  color: var(--white);
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.card__button:active {
+  background-image: linear-gradient(
+    to bottom,
+    var(--light-slate-blue),
+    var(--light-royal-blue)
+  );
+}

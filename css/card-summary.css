@@ -1,0 +1,73 @@
+/* Card summary */
+.summary {
+  width: 85%;
+  max-width: 50rem;
+  margin: 3rem auto;
+}
+
+.summary__title {
+  margin-bottom: 2rem;
+  color: var(--dark-gray-blue);
+}
+
+.attribute {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0;
+  padding: 2rem;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.attribute__label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.attribute__name {
+  font-weight: 700;
+}
+
+.attribute__score {
+  color: var(--light-lavander);
+  font-weight: 700;
+}
+
+.attribute__value {
+  color: var(--dark-gray-blue);
+}
+
+/* Reaction */
+.attribute--reaction {
+  background-color: var(--very-light-red);
+}
+.attribute--reaction .attribute__name {
+  color: var(--light-red);
+}
+
+/* Memory */
+.attribute--memory {
+  background-color: var(--light-orangey-yellow);
+}
+.attribute--memory .attribute__name {
+  color: var(--orangey-yellow);
+}
+
+/* Verbal */
+.attribute--verbal {
+  background-color: var(--light-green-teal);
+}
+.attribute--verbal .attribute__name {
+  color: var(--green-teal);
+}
+
+/* Visual */
+.attribute--visual {
+  background-color: var(--light-cobalt-blue);
+}
+.attribute--visual .attribute__name {
+  color: var(--cobalt-blue);
+}
