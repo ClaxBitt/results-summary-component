@@ -2,12 +2,20 @@
 .summary {
   width: 85%;
   max-width: 50rem;
-  margin: 3rem auto;
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 3rem;
 }
 
 .summary__title {
   margin-bottom: 2rem;
   color: var(--dark-gray-blue);
+}
+
+@media (min-width: 768px){
+  .summary__title {
+    font-size: 2.4rem;
+  }
 }
 
 .attribute {
@@ -70,4 +78,26 @@
 }
 .attribute--visual .attribute__name {
   color: var(--cobalt-blue);
+}
+
+/* ** Button ** */
+.card__button {
+  display: block;
+  margin: 3rem auto 0 auto;
+  border: none;
+  width: 100%;
+  padding: 2rem 0;
+  background-color: var(--dark-gray-blue);
+  border-radius: 30px;
+  color: var(--white);
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.card__button:hover {
+  background-image: linear-gradient(
+    to bottom,
+    var(--light-slate-blue),
+    var(--light-royal-blue)
+  );
+  cursor: pointer;
 }
